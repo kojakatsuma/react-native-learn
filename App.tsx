@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Linking } from 'react-native';
 
 
 export default () => {
@@ -8,7 +8,8 @@ export default () => {
       <View style={{ width: 50, height: 50, backgroundColor: 'powderblue' }} />
       <View style={{ width: 50, height: 50, backgroundColor: 'skyblue' }} />
       <View style={{ width: 50, height: 50, backgroundColor: 'steelblue' }} />
-      <Text >Learn <a href='https://reactnative.dev/docs/flexbox'>this </a></Text>
+      <Text >Learn</Text>
+      <Text onPress={() => Linking.openURL('https://reactnative.dev/docs/flexbox')}>this</Text>
     </View>
   );
 }
